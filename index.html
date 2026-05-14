@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhwanit Panchal • Building Ideas Into Digital Reality</title>
+  <meta name="description" content="Dhwanit Panchal — Student, Creator, AI Enthusiast & Future Engineer." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ====== CUSTOM CURSOR ====== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ====== LOADER ====== -->
+  <div class="loader" id="loader">
+    <div class="loader-orb"></div>
+    <p>Initializing Experience<span class="dots">...</span></p>
+  </div>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">DP</span>
+        <span class="logo-text">Dhwanit<span>.</span></span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#bootcamp">Bootcamps</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot-live"></span> Available for collaborations
+      </div>
+
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Dhwanit Panchal</span>
+      </h1>
+
+      <h2 class="hero-tagline">Building Ideas Into Digital Reality</h2>
+
+      <p class="hero-sub">
+        Student • Creator • AI Enthusiast • Future Engineer
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary magnetic">
+          <span>View My Work</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost magnetic">Contact Me</a>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="mouse"><span></span></div>
+        <p>Scroll to explore</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// About Me</span>
+        <h2 class="section-title">Who is <span class="gradient-text">Dhwanit?</span></h2>
+      </div>
+
+      <div class="about-wrapper">
+        <div class="about-image reveal">
+          <div class="image-frame">
+            <div class="profile-placeholder">DP</div>
+            <!-- If you have an image, uncomment below: -->
+            <!-- <img src="assets/profile.png" alt="Dhwanit Panchal" /> -->
+          </div>
+          <div class="image-glow"></div>
+        </div>
+
+        <div class="about-text reveal">
+          <div class="glass-card">
+            <p>
+              I am a passionate student and creator who loves technology, AI, coding,
+              electronics, design, and building real-world projects. I enjoy learning
+              new skills and helping others understand technology in a simple way.
+            </p>
+            <p>
+              Whether it's building an AI assistant, designing a website, or mentoring
+              beginners — I believe great ideas deserve to be brought to life.
+            </p>
+          </div>
+
+          <div class="highlight-cards">
+            <div class="highlight-card" data-tilt>
+              <div class="hc-icon">🤖</div>
+              <h4>AI & Automation</h4>
+              <p>Building smart tools that save time.</p>
+            </div>
+            <div class="highlight-card" data-tilt>
+              <div class="hc-icon">💻</div>
+              <h4>Web Development</h4>
+              <p>Modern, responsive web experiences.</p>
+            </div>
+            <div class="highlight-card" data-tilt>
+              <div class="hc-icon">⚡</div>
+              <h4>Electronics & Robotics</h4>
+              <p>From Arduino to real-world devices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SKILLS SECTION ====== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// My Toolbox</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Expertise</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Each skill: icon, name, level% -->
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-icon">🐍</div>
+          <h4>Python</h4>
+          <div class="skill-bar"><span style="--lvl:85%"></span></div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-icon">🌐</div>
+          <h4>HTML</h4>
+          <div class="skill-bar"><span style="--lvl:95%"></span></div>
+          <span class="skill-percent">95%</span>
+        </div>
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-icon">🎨</div>
+          <h4>CSS</h4>
+          <div class="skill-bar"><span style="--lvl:90%"></span></div>
+          <span class="skill-percent">90%</span>
+        </div>
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-icon">⚡</div>
+          <h4>JavaScript</h4>
+          <div class="skill-bar"><span style="--lvl:80%"></span></div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-icon">🧠</div>
+          <h4>AI Tools</h4>
+          <div class="skill-bar"><span style="--lvl:88%"></span></div>
+          <span class="skill-percent">88%</span>
+        </div>
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-icon">🔌</div>
+          <h4>Arduino</h4>
+          <div class="skill-bar"><span style="--lvl:82%"></span></div>
+          <span class="skill-percent">82%</span>
+        </div>
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-icon">🤖</div>
+          <h4>Robotics</h4>
+          <div class="skill-bar"><span style="--lvl:75%"></span></div>
+          <span class="skill-percent">75%</span>
+        </div>
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-icon">🎬</div>
+          <h4>Video Editing</h4>
+          <div class="skill-bar"><span style="--lvl:78%"></span></div>
+          <span class="skill-percent">78%</span>
+        </div>
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-icon">✨</div>
+          <h4>UI/UX Design</h4>
+          <div class="skill-bar"><span style="--lvl:80%"></span></div>
+          <span class="skill-percent">80%</span>
+        </div>
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-icon">🎤</div>
+          <h4>Public Speaking</h4>
+          <div class="skill-bar"><span style="--lvl:85%"></span></div>
+          <span class="skill-percent">85%</span>
+        </div>
+        <div class="skill-card reveal" data-tilt>
+          <div class="skill-icon">📚</div>
+          <h4>Teaching / Mentoring</h4>
+          <div class="skill-bar"><span style="--lvl:92%"></span></div>
+          <span class="skill-percent">92%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PROJECTS SECTION ====== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Featured Work</span>
+        <h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal" data-tilt>
+          <div class="project-thumb" style="--g1:#00f5ff;--g2:#8b5cf6">
+            <span class="project-emoji">🤖</span>
+          </div>
+          <div class="project-body">
+            <h3>JARVIS AI Desktop Assistant</h3>
+            <p>A Python-powered AI assistant that listens, responds, and automates tasks on your PC.</p>
+            <div class="tech-stack">
+              <span>Python</span><span>AI</span><span>Speech</span>
+            </div>
+            <a href="#" class="project-btn">View Project →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <div class="project-thumb" style="--g1:#f472b6;--g2:#8b5cf6">
+            <span class="project-emoji">🎓</span>
+          </div>
+          <div class="project-body">
+            <h3>AI Bootcamp for Beginners</h3>
+            <p>A structured beginner bootcamp teaching AI tools, prompts, and real-world applications.</p>
+            <div class="tech-stack">
+              <span>Curriculum</span><span>AI</span><span>Teaching</span>
+            </div>
+            <a href="#" class="project-btn">View Project →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <div class="project-thumb" style="--g1:#34d399;--g2:#06b6d4">
+            <span class="project-emoji">💡</span>
+          </div>
+          <div class="project-body">
+            <h3>Arduino LED Projects</h3>
+            <p>Creative LED patterns, sensors, and interactive electronics built with Arduino boards.</p>
+            <div class="tech-stack">
+              <span>Arduino</span><span>C++</span><span>Hardware</span>
+            </div>
+            <a href="#" class="project-btn">View Project →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <div class="project-thumb" style="--g1:#fbbf24;--g2:#ef4444">
+            <span class="project-emoji">🎮</span>
+          </div>
+          <div class="project-body">
+            <h3>Game Development Projects</h3>
+            <p>Mini games and interactive experiences built with web tech and game engines.</p>
+            <div class="tech-stack">
+              <span>JS</span><span>Unity</span><span>Design</span>
+            </div>
+            <a href="#" class="project-btn">View Project →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <div class="project-thumb" style="--g1:#60a5fa;--g2:#a78bfa">
+            <span class="project-emoji">🔧</span>
+          </div>
+          <div class="project-body">
+            <h3>Helicoil Service Website</h3>
+            <p>A professional business website built for a real client, optimized and responsive.</p>
+            <div class="tech-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <a href="#" class="project-btn">View Project →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <div class="project-thumb" style="--g1:#f59e0b;--g2:#ec4899">
+            <span class="project-emoji">🏎️</span>
+          </div>
+          <div class="project-body">
+            <h3>3D Car / Runner Game</h3>
+            <p>An endless 3D runner game with smooth controls, obstacles, and scoring system.</p>
+            <div class="tech-stack">
+              <span>Three.js</span><span>JS</span><span>3D</span>
+            </div>
+            <a href="#" class="project-btn">View Project →</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-tilt>
+          <div class="project-thumb" style="--g1:#22d3ee;--g2:#a855f7">
+            <span class="project-emoji">🚀</span>
+          </div>
+          <div class="project-body">
+            <h3>Personal Branding Experiments</h3>
+            <p>Designs, posters, thumbnails, and content systems to build a strong personal brand.</p>
+            <div class="tech-stack">
+              <span>Design</span><span>AI</span><span>Content</span>
+            </div>
+            <a href="#" class="project-btn">View Project →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== BOOTCAMP / TEACHING SECTION ====== -->
+  <section class="section bootcamp" id="bootcamp">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Mentorship</span>
+        <h2 class="section-title">Helping Beginners Enter <br><span class="gradient-text">The World of Tech</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-num">01</span>
+            <h4>🎮 Game Development</h4>
+            <p>Beginner-friendly intro to building simple games with JavaScript and game tools.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-num">02</span>
+            <h4>🌐 Website Development</h4>
+            <p>From zero to deploying your first personal website using HTML, CSS & JS.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-num">03</span>
+            <h4>🔌 Arduino & Robotics</h4>
+            <p>Hands-on hardware learning — wires, LEDs, sensors, and your first robot.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-num">04</span>
+            <h4>💻 Basics of Coding</h4>
+            <p>Programming fundamentals explained in a simple, visual, beginner way.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="tl-num">05</span>
+            <h4>🧠 AI Tools for Students</h4>
+            <p>Learn how to use AI for studies, projects, content, and productivity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SERVICES SECTION ====== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// What I Offer</span>
+        <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal" data-tilt>
+          <div class="service-num">01</div>
+          <h4>Basic Website Creation</h4>
+          <p>Clean, responsive websites built from scratch for personal or business use.</p>
+        </div>
+        <div class="service-card reveal" data-tilt>
+          <div class="service-num">02</div>
+          <h4>AI Tool Guidance</h4>
+          <p>Personal coaching on how to use ChatGPT, MidJourney, and modern AI tools.</p>
+        </div>
+        <div class="service-card reveal" data-tilt>
+          <div class="service-num">03</div>
+          <h4>Poster / Thumbnail Prompt Creation</h4>
+          <p>High-quality AI image prompts for posters, thumbnails, and social content.</p>
+        </div>
+        <div class="service-card reveal" data-tilt>
+          <div class="service-num">04</div>
+          <h4>Arduino Beginner Guidance</h4>
+          <p>Step-by-step help to start your first electronics and Arduino project.</p>
+        </div>
+        <div class="service-card reveal" data-tilt>
+          <div class="service-num">05</div>
+          <h4>Tech Bootcamp Sessions</h4>
+          <p>Live or recorded beginner sessions on coding, AI, and creative tech.</p>
+        </div>
+        <div class="service-card reveal" data-tilt>
+          <div class="service-num">06</div>
+          <h4>Simple Automation Projects</h4>
+          <p>Small Python or AI scripts that automate repetitive daily tasks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ACHIEVEMENTS / STATS ====== -->
+  <section class="section stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <h3 class="counter" data-target="10">0</h3>
+          <p>Projects Explored</p>
+        </div>
+        <div class="stat-card reveal">
+          <h3 class="counter" data-target="7">0</h3>
+          <p>Students Mentored</p>
+        </div>
+        <div class="stat-card reveal">
+          <h3 class="counter" data-target="3">0</h3>
+          <p>Bootcamp Topics</p>
+        </div>
+        <div class="stat-card reveal">
+          <h3 class="counter" data-target="100">0</h3>
+          <p>Learning Mindset %</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== 3D INTERACTIVE SECTION ====== -->
+  <section class="section interactive3d">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Interactive</span>
+        <h2 class="section-title">Move Your <span class="gradient-text">Mouse</span></h2>
+        <p class="section-sub">An interactive 3D experience — drag, hover, explore.</p>
+      </div>
+      <div class="three-wrap reveal">
+        <canvas id="objCanvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT SECTION ====== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// Let's Connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <h3>Let's build something amazing together.</h3>
+          <p>Have an idea, a project, or just want to say hi? My inbox is always open.</p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="ci-icon">📧</span>
+              <div><small>Email</small><a href="mailto:hello@dhwanit.dev">hello@dhwanit.dev</a></div>
+            </li>
+            <li>
+              <span class="ci-icon">📸</span>
+              <div><small>Instagram</small><a href="#" target="_blank">@dhwanit.panchal</a></div>
+            </li>
+            <li>
+              <span class="ci-icon">💼</span>
+              <div><small>LinkedIn</small><a href="#" target="_blank">in/dhwanit-panchal</a></div>
+            </li>
+            <li>
+              <span class="ci-icon">🐙</span>
+              <div><small>GitHub</small><a href="#" target="_blank">github.com/dhwanit</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" required />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" required />
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary magnetic">
+            <span>Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">DP</span>
+        <p>Designed and built by <strong>Dhwanit Panchal</strong></p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="LinkedIn">💼</a>
+        <a href="#" aria-label="GitHub">🐙</a>
+        <a href="mailto:hello@dhwanit.dev" aria-label="Email">📧</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Dhwanit Panchal. All rights reserved.</p>
+  </footer>
+
+  <!-- ====== EXTERNAL LIBRARIES (CDN) ====== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>  
